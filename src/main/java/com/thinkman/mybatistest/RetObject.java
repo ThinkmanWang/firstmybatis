@@ -1,4 +1,4 @@
-package com.thinkman.mybatistest.models;
+package com.thinkman.mybatistest;
 
 /**
  * Created by wangx on 2017-02-27.

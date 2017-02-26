@@ -9,15 +9,15 @@ public class User {
 
     private String token;
 
-    private int create_time;
+    private long create_time;
 
-    private int expire_time;
+    private long expire_time;
 
     private String password;
 
     private String user_name;
 
-    private int id;
+    private long id;
 
     public void setToken(String token){
         this.token = token;
@@ -25,16 +25,16 @@ public class User {
     public String getToken(){
         return this.token;
     }
-    public void setCreate_time(int create_time){
+    public void setCreate_time(long create_time){
         this.create_time = create_time;
     }
-    public int getCreate_time(){
+    public long getCreate_time(){
         return this.create_time;
     }
-    public void setExpire_time(int expire_time){
+    public void setExpire_time(long expire_time){
         this.expire_time = expire_time;
     }
-    public int getExpire_time(){
+    public long getExpire_time(){
         return this.expire_time;
     }
     public void setPassword(String password){
@@ -49,10 +49,10 @@ public class User {
     public String getUser_name(){
         return this.user_name;
     }
-    public void setId(int id){
+    public void setId(long id){
         this.id = id;
     }
-    public int getId(){
+    public long getId(){
         return this.id;
     }
 }
