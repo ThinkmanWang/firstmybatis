@@ -6,5 +6,5 @@ package com.thinkman.mybatistest.models;
 public class RetObject {
     public int code = 0;
     public String message = "";
-    public Object data = null;
+    public String data = "";
 }
