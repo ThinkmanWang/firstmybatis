@@ -19,6 +19,47 @@ public class User {
 
     private long id;
 
+    private String avatar;
+
+    private long leader_uid;
+
+    private String show_name;
+
+    private String title;
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public void setLeader_uid(long leader_uid) {
+        this.leader_uid = leader_uid;
+    }
+
+    public void setShow_name(String show_name) {
+        this.show_name = show_name;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAvatar() {
+
+        return avatar;
+    }
+
+    public long getLeader_uid() {
+        return leader_uid;
+    }
+
+    public String getShow_name() {
+        return show_name;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
     public void setToken(String token){
         this.token = token;
     }
