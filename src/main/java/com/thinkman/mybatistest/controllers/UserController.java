@@ -33,6 +33,7 @@ public class UserController {
 
         logger.info(String.format("User Login user_name: %s, password: %s", name, pass));
 
+        org.apache.ibatis.logging.LogFactory.useLog4JLogging();
         User user = mUserMapper.login(name, pass);
 
         RetObject ret = new RetObject();

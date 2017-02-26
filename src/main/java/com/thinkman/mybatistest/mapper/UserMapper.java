@@ -10,6 +10,6 @@ import org.apache.ibatis.annotations.Select;
  */
 @Mapper
 public interface UserMapper {
-    @Select("SELECT * FROM view_user WHERE user_name = #{user_name} and password=#{password} order by create_time desc limit 1")
+    @Select("SELECT * FROM view_user WHERE user_name=#{user_name} and password=#{password} order by create_time desc limit 1")
     User login(@Param("user_name") String user_name, @Param("password") String password);
 }
