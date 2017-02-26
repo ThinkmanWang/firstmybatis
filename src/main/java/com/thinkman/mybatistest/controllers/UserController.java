@@ -40,8 +40,9 @@ public class UserController {
         ret.code = 0;
         ret.message = "success";
         if (null != user) {
-            ret.data = new Gson().toJson(user);
+            ret.data = user;
             logger.info("User not null");
+            logger.info(new Gson().toJson(user));
         } else {
             logger.error("User is null");
         }
