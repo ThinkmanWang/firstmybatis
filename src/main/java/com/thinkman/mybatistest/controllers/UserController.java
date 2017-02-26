@@ -16,8 +16,8 @@ public class UserController {
     @RequestMapping(value="/login.do", method={RequestMethod.POST, RequestMethod.GET})
     public String login(HttpServletRequest request) {
 
-        String name = request.getParameter("name");
-        String pass = request.getParameter("pass");
+        String name = request.getParameter("username");
+        String pass = request.getParameter("password");
 
         return "success " + name;
     }
