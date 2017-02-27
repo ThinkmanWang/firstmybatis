@@ -1,7 +1,9 @@
 package com.thinkman.mybatistest;
 
+import com.thinkman.mybatistest.controllers.UserController;
 import com.thinkman.mybatistest.mapper.UserMapper;
 import com.thinkman.mybatistest.models.User;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,6 +22,8 @@ public class ApplicationTests {
 	@Autowired
 	private UserMapper userMapper;
 
+	private Logger logger = Logger.getLogger(ApplicationTests.class);
+
 	@Test
 	@Rollback
 	public void findByName() throws Exception {
@@ -27,7 +31,7 @@ public class ApplicationTests {
 		if (null == u) {
 			System.out.println("User is NULL");
 		} else {
-			System.out.println(String.format("%s %s", u.getId(), u.getUser_name()));
+			logger.info(String.format("%s %s", u.getId(), u.getUser_name()));
 		}
 		Assert.assertEquals(2, u.getId());
 	}
