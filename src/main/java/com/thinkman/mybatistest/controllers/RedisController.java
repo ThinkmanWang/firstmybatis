@@ -19,7 +19,7 @@ public class RedisController {
 
 	@RequestMapping("/redis.do")
 	public String redis() {
-		mStringRedisTemplate.opsForValue().set("aaa", "111");
+		mStringRedisTemplate.opsForValue().set("aaa", "12345678");
 		logger.info(mStringRedisTemplate.opsForValue().get("aaa"));
 
 		return "success";
