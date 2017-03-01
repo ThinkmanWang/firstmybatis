@@ -15,13 +15,13 @@ public class MQController {
 	@Autowired
 	private MQConsumerService consumerService;
 
-	@RequestMapping("/send")
+	@RequestMapping("/send.do")
 	public String send() {
 		produceService.send("this is an activemq message fxxk");
 		return "send";
 	}
 	
-	@RequestMapping("/receive")
+	@RequestMapping("/receive.do")
 	public String receive() {
 		String str = consumerService.receive();
 		return str;
